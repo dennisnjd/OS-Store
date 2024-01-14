@@ -34,12 +34,13 @@
     .fab:hover {
         color: blue;
     }
+   
 </style>
 
 <body style="font-family: 'Barlow', sans-serif;">
 
     <!-- Header -->
-    <div style="position: sticky; top: 0;z-index: 1;">
+    <div style="position: sticky; top: 0;z-index: 1;" id="navbr">
         <nav class="navbar bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -56,7 +57,7 @@
 
 
     <div class="row mt-5">
-        <div class="col-md-7  ms-4 ms-md-5">
+        <div class="col-md-7  ms-3 ms-md-5">
             <div id="carouselExample" class="carousel slide mb-4">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -87,12 +88,12 @@
             </div>
 
         </div>
-        <div class="col-md-4 ms-5 ms-md-o">
+        <div class="col-md-4 ms-3 ms-md-o">
             <h1 class="text-start">Welcome <br> to the <span class="fw-bolder text-primary">OS Store</span> </h1>
             <h4 class="text-danger mt-3 mb-4 ">Your Gateway to Operating Systems Wonderland! 🚀</h4>
             <p>Explore our curated collection of Operating Systems, each a unique masterpiece tailored to elevate your
                 digital experience. <br>
-                Ready to transcend the ordinary? Click, download, and elevate your OS experience with OS Store! 🌐✨</p>
+                Ready to transcend the ordinary? Click, download, and elevate your OS experience with <span class="text-success fw-semibold">OS Store!</span>  🌐✨</p>
         </div>
     </div>
 
@@ -102,19 +103,13 @@
 
 
 
-
-
-
-
-
-
         <!-- Types of OS -->
         <div class="os mt-5 text-center mb-4">
-            <h2 fw-bolder>List of OS available</h2>
+            <h2 class="fw-semibold mb-5">List of OS available</h2>
         </div>
 
         <!-- cards -->
-        <div class="row text-center ms-5">
+        <div class="row text-center ms-5 ms-md-0">
             <div class="col-md-3 mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="https://logowik.com/content/uploads/images/windows-116906.jpg" class="card-img-top"
@@ -162,7 +157,7 @@
 
     <!-- Footer -->
 
-    <footer class="text-center bg-body-tertiary mt-5">
+    <footer class="text-center bg-body-tertiary mt-5" style="width: 99vw;">
         <!-- Grid container -->
         <div class="container pt-4">
             <!-- Section: Social media -->
