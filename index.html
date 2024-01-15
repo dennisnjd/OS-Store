@@ -31,6 +31,15 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
 </head>
 
 <body style="font-family: 'Barlow', sans-serif;">
@@ -99,7 +108,7 @@
                 Ready to transcend the ordinary? Click, download, and elevate your OS experience with <span
                     class="text-success fw-semibold">OS Store!</span> 🌐✨</p>
             <hr>
-            <a href="#listOfOs">
+            <a href="#qna">
                 <button class="btn btn-primary bttn mt-4">Explore</button>
             </a>
         </div>
@@ -107,101 +116,674 @@
 
 
 
-    <div class="container mt-5" id="listOfOs">
+    <div class="container mt-3" id="qna">
 
 
 
         <!-- QnA -->
-        <div class="qnaBox mt-5 pt-4 mb-5 pb-5">
+        <div class="qnaBox mt-4 pt-4 mb-5 pb-5 " id="qna">
+
+            <div class="os text-center mb-4">
+                <h2 class="fw-semibold mb-5">General Queries</h2>
+            </div>
 
             <div class="row">
-                <div class="qn col-12 col-md-5 align-self-center">
+                <div class="qn col-12 col-md-5 align-self-center mb-4">
                     <h2>So, <br> What is an Operating System?</h2>
                 </div>
                 <div class="ans col-12 col-md-7 ps-5 q1">
-                    <p> <i class="fa-solid fa-quote-left fa-xl me-4"></i>
+                    <p> <br> <i class="fa-solid fa-quote-left fa-xl me-4"></i>
                         An Operating System (OS) for PCs is the maestro orchestrating a digital symphony, seamlessly
                         managing hardware resources and facilitating user interaction. <br> It's the silent force that
                         transforms hardware components into a harmonious ensemble, making your PC dance to the rhythm of
                         your commands.
                         With a sophisticated ballet of algorithms, it empowers users to interact with their machines,
                         translating their commands into a symphony of binary notes that make computing a delightful
-                        performance. 
-                        <i class="fa-solid fa-quote-right fa-xl ms-4"></i><br> <br> <span class="sentance">In essence, an OS is the maestro, transforming a collection of hardware components
-                        into a harmonious ensemble, creating a digital symphony for users to experience.</span> </p>
+                        performance.
+                        <i class="fa-solid fa-quote-right fa-xl ms-4"></i><br> <br> <span class="sentance">In essence,
+                            an OS is the maestro, transforming a collection of hardware components
+                            into a harmonious ensemble, creating a digital symphony for users to experience.</span>
+                    </p>
                 </div>
             </div>
 
 
+
+            <div class="row mt-5 pt-5">
+
+                <div class="qn col-12 col-md-5 order-md-2 align-self-center mb-4 ps-4">
+                    <h2>So, <br> How can I install an OS to my System?</h2>
+                </div>
+
+                <div class="ans col-12 col-md-7 order-md-1 ps-3 q2">
+                    <p> <br> <i class="fa-solid fa-quote-left fa-xl me-4"></i>
+                        Embark on the digital journey by downloading the OS's ISO file and boot it using any software <a
+                            href="https://rufus.ie/en/">( eg:Rufus )</a> , a digital blueprint for your
+                        system's transformation. <br> Insert the installation medium, like a USB or DVD, into your
+                        system's
+                        port, akin to placing a key into a lock. Follow the on-screen prompts, dancing through menus
+                        like a digital waltz, checking dishes, selecting preferences, and confirming choices. Let the
+                        installation wizard
+                        cast its spell, transforming your hardware into a personalized realm of computing possibilities.
+
+                        <i class="fa-solid fa-quote-right fa-xl ms-4"></i><br> <br> <span class="sentance">Finally,
+                            witness the birth of your digital companion, ready to obey your commands in the vast
+                            landscape of the operating system.</span>
+                    </p>
+                </div>
+
+
+            </div>
+
         </div>
+
 
 
 
 
         <!-- Types of OS -->
-        <div class="os mt-5 text-center mb-4">
-            <h2 class="fw-semibold mb-5">List of OS available</h2>
+        <section id="typeOfOs">
+
+            <div class="os mt-5 text-center mb-4">
+                <h2 class="fw-semibold mt-5 mb-5">Types of Operating Systems</h2>
+            </div>
+
+            <!-- cards -->
+            <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly mb-5">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card" style="width: 16.5rem;">
+                        <img src="https://logowik.com/content/uploads/images/windows-116906.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Windows</h5>
+                            <p class="card-text">Windows is a graphical user interface (GUI) based operating system
+                                developed by Microsoft
+                            </p>
+                            <a href="#collapseOne" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#windowsModal">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="card" style="width: 16.5rem;">
+                        <img src="https://logowik.com/content/uploads/images/895_macos.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">MacOS</h5>
+                            <p class="card-text">MacOS is the computer operating system (OS) for Apple desktops and
+                                laptops.
+                            </p>
+                            <a href="#macosD" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#macModal">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-4">
+                    <div class="card" style="width: 16.5rem;">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/09/Linux-Logo.png"
+                            class="card-img-top mt-4 mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Linux</h5>
+                            <p class="card-text">Linux is a Unix-like, open source and community-developed operating
+                                system
+                                for computers.</p>
+                            <a href="#linuxD" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#linuxModal">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card" style="width: 16.5rem;">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/08/Chrome-Logo.png"
+                            class="card-img-top mt-4 mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Chrom OS Flex</h5>
+                            <p class="card-text">ChromeOS Flex is a fast, secure, cloud-first, operating
+                                system for Macs and PCs.</p>
+                            <a href="#chromeD" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#chromeModal">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Modal for Chrome OS -->
+        <div class="modal fade" id="chromeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Chrome OS Flex : A Brief Overview</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Features: <br>
+                        <ul>
+                            <li>
+                                <b>Cloud-Centric Approach:</b> Chrome OS Flex is designed around cloud computing,
+                                encouraging users to store data and run applications online.
+                            </li>
+                            <li>
+                                <b>Speed and Simplicity:</b> Known for its quick boot times and a streamlined interface,
+                                offering a simplified user experience.
+                            </li>
+                            <li>
+                                <b>Security: </b>Utilizes a sandboxed architecture and automatic updates, enhancing
+                                device security.
+                            </li>
+                            <li>
+                                <b>Chromebook Ecosystem: </b>Chrome OS primarily runs on Chromebooks, providing a range
+                                of affordable and efficient laptops.
+                            </li>
+                        </ul> <br>
+
+                        Ongoing Development: <br>
+                        <ul>
+                            <li>
+                                <b>Web-Centric:</b> Focused on web applications, leveraging Google Chrome as the primary
+                                browser.
+                            </li>
+                            <li>
+                                <b>Android Integration:</b> Allows Android app installation, expanding the app ecosystem
+                                for Chrome OS users.
+                            </li>
+                            <li>
+                                <b>Education Focus:</b>Chromebooks are widely adopted in educational settings due to
+                                their simplicity, ease of management, and cost-effectiveness.
+                            </li>
+
+                        </ul>
+                        In essence, Chrome OS embodies a cloud-first philosophy, emphasizing simplicity, security, and
+                        integration within Google's ecosystem.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- cards -->
-        <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly">
+        <!-- Modal for windows OS -->
+        <div class="modal fade" id="windowsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"> <b>Windows OS: A Brief Overview</b></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Features: <br>
+                        <ul>
+                            <li>
+                                <b>User-Friendly Interface:</b> Windows is known for its intuitive graphical user
+                                interface (GUI), making it accessible for users of all levels.
+                            </li>
+                            <li>
+                                <b>Multitasking:</b> Allows users to run multiple applications simultaneously,
+                                enhancing productivity.
+                            </li>
+                            <li>
+                                <b>Software Compatibility: </b>Supports a vast array of third-party software, fostering
+                                a diverse application ecosystem.
+                            </li>
+                            <li>
+                                <b>Security Measures: </b>Implements built-in security features like Windows Defender
+                                and regular updates to mitigate threats.
+                            </li>
+                        </ul> <br>
 
-            <div class="col-md-3">
-                <div class="card" style="width: 16.5rem;">
-                    <img src="https://logowik.com/content/uploads/images/windows-116906.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">Windows 11</h5>
-                        <p class="card-text">Windows 11 is a free upgrade to Windows 10 that was released in late 2021.
+                        Ongoing Development: <br>
+                        <ul>
+                            <li>
+                                <b>Regular Updates:</b> Microsoft provides regular updates, adding features, improving
+                                security, and addressing issues.
+                            </li>
+                            <li>
+                                <b>Versatility:</b> Windows powers a broad spectrum of devices, from PCs to tablets and
+                                gaming consoles.
+                            </li>
+
+                        </ul>
+                        In essence, Windows OS has evolved into a versatile and user-friendly platform, constantly
+                        adapting to technological advancements and user needs.
                         </p>
-                        <a href="https://www.microsoft.com/en-in/software-download/windows11"
-                            class="btn btn-primary">Download ISO</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-md-3">
-                <div class="card" style="width: 16.5rem;">
-                    <img src="https://logowik.com/content/uploads/images/895_macos.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">MacOS</h5>
-                        <p class="card-text">MacOS is the computer operating system (OS) for Apple desktops and laptops.
-                        </p>
-                        <a href="https://support.apple.com/en_IN/downloads/macos" class="btn btn-primary">Download
-                            ISO</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-3">
-                <div class="card" style="width: 16.5rem;">
-                    <img src="https://variwiki.com/images/1/1d/Ubuntu-logo.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">Linux Ubuntu</h5>
-                        <p class="card-text">Ubuntu is a free, open-source and Linux-based operating system (OS) you can
-                            use.</p>
-                        <a href="https://ubuntu.com/download/desktop" class="btn btn-primary">Download ISO</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card" style="width: 16.5rem;">
-                    <img src="https://1000logos.net/wp-content/uploads/2017/08/Chrome-Logo.png"
-                        class="card-img-top mt-4 mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-semibold">Chrom OS Flex</h5>
-                        <p class="card-text">ChromeOS Flex is a fast, secure, cloud-first, operating
-                            system for Macs and PCs.</p>
-                        <a href="https://chromeenterprise.google/os/chromeosflex/#form-section"
-                            class="btn btn-primary">Download ISO</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+
+        <!-- Modal for Linux OS -->
+        <div class="modal fade" id="linuxModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Linux : A Brief Overview </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Features: <br>
+                        <ul>
+                            <li>
+                                <b>Open Source Philosophy:</b> Linux is built on an open-source model, allowing users to
+                                view, modify, and distribute the source code freely.
+                            </li>
+                            <li>
+                                <b>Security:</b> Known for its robust security features, Linux is less susceptible to
+                                malware and viruses.
+                            </li>
+                            <li>
+                                <b>Customization: </b> Offers extensive customization options, allowing users to tailor
+                                the operating system to their preferences.
+                            </li>
+                            <li>
+                                <b> Stability: </b>Linux is recognized for its stability and reliability, making it a
+                                preferred choice for servers and embedded systems.
+                            </li>
+                        </ul> <br>
+
+                        Ongoing Development: <br>
+                        <ul>
+                            <li>
+                                <b>Diverse Distributions:</b>Numerous distributions (distros) cater to various user
+                                needs, from user-friendly Ubuntu to advanced options like Arch Linux.
+                            </li>
+                            <li>
+                                <b>Command Line Interface (CLI):</b> Provides a powerful command-line interface, favored
+                                by developers and system administrators.
+                            </li>
+                            <li>
+                                <b>Community Support:</b>Thriving communities contribute to ongoing development,
+                                troubleshooting, and support.
+                            </li>
+
+                        </ul>
+                        Linux stands as a symbol of community-driven development, emphasizing security, customization,
+                        and stability.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal for mac OS -->
+        <div class="modal fade" id="macModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Mac OS: A Brief Overview</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Features: <br>
+                        <ul>
+                            <li>
+                                <b>Sleek Design:</b> macOS is known for its elegant and minimalist design, offering a
+                                visually appealing and cohesive user experience.
+                            </li>
+                            <li>
+                                <b>Optimized Performance:</b> Built to run seamlessly on Apple hardware, ensuring
+                                optimal performance and efficiency.
+                            </li>
+                            <li>
+                                <b>Integrated Ecosystem: </b>Deep integration with other Apple devices through services
+                                like iCloud, providing a seamless experience across devices.
+                            </li>
+                            <li>
+                                <b>App Store:: </b>Offers a curated App Store with a focus on quality, security, and a
+                                wide range of applications.
+                            </li>
+                        </ul> <br>
+
+                        Ongoing Development: <br>
+                        <ul>
+                            <li>
+                                <b>Regular Updates:</b> Apple regularly releases updates, introducing new features and
+                                enhancing security.
+                            </li>
+                            <li>
+                                <b>Apple Silicon Transition::</b> WThe shift to Apple Silicon architecture marks a new
+                                era for macOS, promising improved performance and efficiency.
+                            </li>
+
+                        </ul>
+                        In summary, macOS stands as a pinnacle of design and performance, providing users with a
+                        cohesive ecosystem and a focus on quality applications.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- List of OS -->
+        <section class="mt-5" id="listOfOs">
+            <div class="os mt-5 text-center mb-4" id="listOfOs">
+                <h2 class="fw-semibold mb-5">List of Operating Systems</h2>
+            </div>
+
+
+
+            <div class="accordion" id="accordionExample">
+
+
+                <!-- Windows Download -->
+                <div class="accordion-item" id="windowsD">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Download Windows Versions
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly">
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Windows 11</h5>
+                                            <p class="card-text">Download Windows OS Eleven from below
+                                            </p>
+                                            <a href="https://www.microsoft.com/en-in/software-download/windows11"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Windows 10</h5>
+                                            <p class="card-text"> Download Windows OS Ten from below
+                                                <br>
+                                            </p>
+                                            <a href="https://www.microsoft.com/en-in/software-download/windows10"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Windows 8</h5>
+                                            <p class="card-text">Download Windows OS Eight from below</p>
+                                            <a href="https://www.microsoft.com/en-in/software-download/windows8ISO"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Windows 7</h5>
+                                            <p class="card-text">Download Windows OS Seven from below</p>
+                                            <a href="https://learn.microsoft.com/en-in/lifecycle/products/windows-7"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MacOS download -->
+                <div class="accordion-item" id="macosD">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Download MacOS Versions
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly">
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Catalina</h5>
+                                            <p class="card-text">Download Mac OS Catalina version from below
+                                            </p>
+                                            <a href="https://support.apple.com/kb/DL2051?locale=en_US"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Big Sur</h5>
+                                            <p class="card-text">Download Mac OS Big Sur version from below</p>
+                                            <a href="https://apps.apple.com/id/app/macos-big-sur/id1526878132?mt=12"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Ventura</h5>
+                                            <p class="card-text">Download Mac OS Ventura version from below</p>
+                                            <a href="https://apps.apple.com/us/app/macos-ventura/id1638787999?mt=12"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Mojave</h5>
+                                            <p class="card-text">Download Mac OS Mojave version from below</p>
+                                            <a href="https://support.apple.com/kb/DL2011?locale=en_US"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ubuntu Download -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="linuxD">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Download Some Linux Distros
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly">
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Ubuntu</h5>
+                                            <p class="card-text">It can be used for casual uses. Download Ubuntu from
+                                                below.</p>
+                                            <a href="https://ubuntu.com/download/desktop"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Kali Linux</h5>
+                                            <p class="card-text">Can be used for Cyber security . Download Kali from
+                                                below.</p>
+                                            <a href="https://www.kali.org/get-kali/#kali-installer-images"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Fedora Linux</h5>
+                                            <p class="card-text">Can be used for Programming . Download Fedora from
+                                                below.</p>
+                                            <a href="https://fedoraproject.org/workstation/download"
+                                                class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Kubuntu</h5>
+                                            <p class="card-text">Ubuntu based OS using KDE. Download Kubuntu from below.
+                                            </p>
+                                            <a href="https://kubuntu.org/getkubuntu/" class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Manjaro</h5>
+                                            <p class="card-text">Focused on user privacy. Download Manjaro from below.
+                                            </p>
+                                            <a href="https://manjaro.org/download/" class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Parrot OS</h5>
+                                            <p class="card-text">Focused on Cyber security tools. Download Parrot OS
+                                                from below.</p>
+                                            <a href="https://www.parrotsec.org/download/"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Garuda Linux</h5>
+                                            <p class="card-text">General purpose Arch distro. Download Garuda from
+                                                below.</p>
+                                            <a href="https://garudalinux.org/downloads" class="btn btn-primary">Download
+                                                ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="width: 16.5rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-semibold">Bodhi Linux</h5>
+                                            <p class="card-text">Focused on minimilsm. Download Bodhi from below.</p>
+                                            <a href="https://www.bodhilinux.com/download/"
+                                                class="btn btn-primary">Download ISO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Download Chrome OS Flex -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                            Download ChromeOS Flex
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 16.5rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-semibold">Chrome OS Flex</h5>
+                                        <p class="card-text">Internet focused, Android based, Light weight OS. Download
+                                            from below.</p>
+                                        <a href="https://chromeenterprise.google/os/chromeosflex/#form-section"
+                                            class="btn btn-primary">Download ISO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
 
     </div>
 
@@ -213,26 +795,24 @@
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="https://m.facebook.com/people/Dennis-NJ/100008952181161/?comment_id=Y29tbWVudDoyMjI1NzQ4MDYxMDI4MzQ0XzIyMjYwMDg0Mzc2Njg5NzM%3D"
+                    role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-                <!-- Twitter -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="mailto:dennisnjd@gmail.com?subject=OS%20Store" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/__dennisnj__/" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.linkedin.com/in/dennis-n-j-545617190/" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
                 <!-- Github -->
-                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://github.com/dennisnjd" role="button"
                     data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
