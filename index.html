@@ -16,7 +16,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lobster&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -28,26 +28,27 @@
     <link rel="shortcut icon"
         href="https://c0.klipartz.com/pngpicture/416/842/gratis-png-desarrollo-de-sitios-web-diseno-web-paginas-web-favicon-diseno-web.png"
         type="image/x-icon">
-</head>
 
-<style>
-    .fab:hover {
-        color: blue;
-    }
-   
-</style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
 
 <body style="font-family: 'Barlow', sans-serif;">
 
     <!-- Header -->
-    <div style="position: sticky; top: 0;z-index: 1;" id="navbr">
+    <div style="position: sticky; top: 0;z-index: 1; width: 99vw;" id="navbr">
         <nav class="navbar bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <span class="fw-bolder fs-3 text-primary"> <i class="fa-solid fa-computer"></i> OS
                         Store</span>
                 </a>
+
+
                 <form class="d-flex" role="search">
+                    <a class="me-3 text-decoration-none" href="#listOfOs    ">
+                        <span class="fs-4 text-success ">Download</span>
+                    </a>
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -56,33 +57,34 @@
     </div>
 
 
+    <!-- Banner Images -->
     <div class="row mt-5">
         <div class="col-md-7  ms-3 ms-md-5">
-            <div id="carouselExample" class="carousel slide mb-4">
+            <div id="carouselExampleAutoplaying" class="carousel slide mb-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="2000">
                         <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0dd2428c-c944-40a1-bccd-30274b3c550c/deabfmw-a7bd64b0-2d02-4165-88b6-d2fc756aa844.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBkZDI0MjhjLWM5NDQtNDBhMS1iY2NkLTMwMjc0YjNjNTUwY1wvZGVhYmZtdy1hN2JkNjRiMC0yZDAyLTQxNjUtODhiNi1kMmZjNzU2YWE4NDQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MNoF0Nc6lJmemdFfsjTkr0IcnAgTN890S3vGQ8JrMOI"
                             class="d-block w-100" alt="... " style="height: 65vh;">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./linuxr.png" class="d-block w-100" alt="..." style="height: 65vh;">
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./static/images/linuxr.png" class="d-block w-100" alt="..." style="height: 65vh;">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./macr.png" class="d-block w-100" alt="..." style="height: 65vh;">
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./static/images/macr.png" class="d-block w-100" alt="..." style="height: 65vh;">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <img src="https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/9499241/1089264039995375624/1089264039995375624.png"
                             class="d-block w-100" alt="..." style="height: 65vh;">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon mt-5" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon mt-5" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -91,15 +93,48 @@
         <div class="col-md-4 ms-3 ms-md-o">
             <h1 class="text-start">Welcome <br> to the <span class="fw-bolder text-primary">OS Store</span> </h1>
             <h4 class="text-danger mt-3 mb-4 ">Your Gateway to Operating Systems Wonderland! 🚀</h4>
-            <p>Explore our curated collection of Operating Systems, each a unique masterpiece tailored to elevate your
+            <p class="text-start">Explore our curated collection of Operating Systems, each a unique masterpiece
+                tailored to elevate your
                 digital experience. <br>
-                Ready to transcend the ordinary? Click, download, and elevate your OS experience with <span class="text-success fw-semibold">OS Store!</span>  🌐✨</p>
+                Ready to transcend the ordinary? Click, download, and elevate your OS experience with <span
+                    class="text-success fw-semibold">OS Store!</span> 🌐✨</p>
+            <hr>
+            <a href="#listOfOs">
+                <button class="btn btn-primary bttn mt-4">Explore</button>
+            </a>
         </div>
     </div>
 
 
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="listOfOs">
+
+
+
+        <!-- QnA -->
+        <div class="qnaBox mt-5 pt-4 mb-5 pb-5">
+
+            <div class="row">
+                <div class="qn col-12 col-md-5 align-self-center">
+                    <h2>So, <br> What is an Operating System?</h2>
+                </div>
+                <div class="ans col-12 col-md-7 ps-5 q1">
+                    <p> <i class="fa-solid fa-quote-left fa-xl me-4"></i>
+                        An Operating System (OS) for PCs is the maestro orchestrating a digital symphony, seamlessly
+                        managing hardware resources and facilitating user interaction. <br> It's the silent force that
+                        transforms hardware components into a harmonious ensemble, making your PC dance to the rhythm of
+                        your commands.
+                        With a sophisticated ballet of algorithms, it empowers users to interact with their machines,
+                        translating their commands into a symphony of binary notes that make computing a delightful
+                        performance. 
+                        <i class="fa-solid fa-quote-right fa-xl ms-4"></i><br> <br> <span class="sentance">In essence, an OS is the maestro, transforming a collection of hardware components
+                        into a harmonious ensemble, creating a digital symphony for users to experience.</span> </p>
+                </div>
+            </div>
+
+
+        </div>
+
 
 
 
@@ -109,13 +144,14 @@
         </div>
 
         <!-- cards -->
-        <div class="row text-center ms-5 ms-md-0">
-            <div class="col-md-3 mb-3">
-                <div class="card" style="width: 18rem;">
+        <div class="row text-center ms-5 ms-md-0 d-flex justify-content-evenly">
+
+            <div class="col-md-3">
+                <div class="card" style="width: 16.5rem;">
                     <img src="https://logowik.com/content/uploads/images/windows-116906.jpg" class="card-img-top"
                         alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Windows 11</h5>
+                        <h5 class="card-title fw-semibold">Windows 11</h5>
                         <p class="card-text">Windows 11 is a free upgrade to Windows 10 that was released in late 2021.
                         </p>
                         <a href="https://www.microsoft.com/en-in/software-download/windows11"
@@ -125,11 +161,11 @@
             </div>
 
 
-            <div class="col-md-3 ms-md-5 mb-3">
-                <div class="card" style="width: 18rem;">
+            <div class="col-md-3">
+                <div class="card" style="width: 16.5rem;">
                     <img src="https://logowik.com/content/uploads/images/895_macos.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">MacOS</h5>
+                        <h5 class="card-title fw-semibold">MacOS</h5>
                         <p class="card-text">MacOS is the computer operating system (OS) for Apple desktops and laptops.
                         </p>
                         <a href="https://support.apple.com/en_IN/downloads/macos" class="btn btn-primary">Download
@@ -139,14 +175,28 @@
             </div>
 
 
-            <div class="col-md-3 ms-md-5 mb-3">
-                <div class="card" style="width: 18rem;">
+            <div class="col-md-3">
+                <div class="card" style="width: 16.5rem;">
                     <img src="https://variwiki.com/images/1/1d/Ubuntu-logo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Linux Ubuntu</h5>
+                        <h5 class="card-title fw-semibold">Linux Ubuntu</h5>
                         <p class="card-text">Ubuntu is a free, open-source and Linux-based operating system (OS) you can
                             use.</p>
                         <a href="https://ubuntu.com/download/desktop" class="btn btn-primary">Download ISO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" style="width: 16.5rem;">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/08/Chrome-Logo.png"
+                        class="card-img-top mt-4 mb-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold">Chrom OS Flex</h5>
+                        <p class="card-text">ChromeOS Flex is a fast, secure, cloud-first, operating
+                            system for Macs and PCs.</p>
+                        <a href="https://chromeenterprise.google/os/chromeosflex/#form-section"
+                            class="btn btn-primary">Download ISO</a>
                     </div>
                 </div>
             </div>

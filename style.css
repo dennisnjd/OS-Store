@@ -1,0 +1,19 @@
+.fab:hover {
+    color: blue;
+}
+.btn-primary:hover{
+    background-color: rgb(12, 231, 12);
+}
+.bttn:hover{
+    background-color: black;
+    color: white;
+}
+.q1{
+    border-left: 1px solid blue;
+}
+.ans {
+    font-family: 'Lobster', sans-serif;
+}
+.sentance{
+    color: rgb(11, 171, 192);
+}
