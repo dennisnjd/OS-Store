@@ -1,9 +1,9 @@
 .fab:hover {
     color: blue;
 }
-.btn-primary:hover{
+/* .btn-primary:hover{
     background-color: rgb(12, 231, 12);
-}
+} */
 .bttn:hover{
     background-color: black;
     color: white;
@@ -23,3 +23,48 @@
 .modal{
     height: 80vh;
 }
+.bn48 {
+    background: linear-gradient(90deg, #1e39a5, #c50e07);
+    background-size: auto;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300% 300%;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-img-top {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover .card-img-top {
+    transform: scale(1.5);
+    margin-top: -10px; /* Adjust the value based on your preference */
+  }
+  .card:hover{
+    background-color: rgb(253, 253, 253);
+  }
+
+  .spread-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spread-animation::before {
+    content: "";
+    position: absolute;
+    /* background: rgba(5, 228, 16, 0.5); Adjust the color and opacity as needed */
+    background: rgba(228, 248, 250, 0.5); 
+    color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 100% 100%;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .spread-animation:hover::before {
+    transform: scaleX(1);
+  }
