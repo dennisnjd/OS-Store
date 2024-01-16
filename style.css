@@ -117,7 +117,7 @@
 }
 
 .carousel-fade>.carousel-inner> :not(.active) {
-  opacity: 0;
+  /* opacity: 0; */
   display: block !important;
 }
 
